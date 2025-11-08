@@ -6,33 +6,9 @@
 ---
 
 ## Overview & Objective
-This repository includes work for the **SQL** and **Python** technical tests, along with their respective scripts, documentation and outputs.
-Both scripts independently transform the raw dataset (`sql_test-raw`) into the expected output format (`sql_test-expected`), 
-calculating the required business metrics and presenting them in a structured pivot table.
-
----
-
-## 📁 Repository Structure
-
-```
-mrdiy-junior-data-engineer-assessment/
-│
-├── 📁 data/
-│   └── excel_sample_data_de.xlsx                 # Original dataset provided
-│
-├── 📁 sql/
-│   ├── Data Transformation (SQL).sql             # SQL script with table creation & transformation
-│   ├── sql_test-expected (SQL).csv               # Final output from SQL query (exported)
-│   └── README_SQL.md                             # SQL setup & execution userguide
-│
-├── 📁 python/
-│   ├── Data Transformation (Python).ipynb        # Python Jupyter Notebook transformation
-│   ├── sql_test-expected (Python).xlsx           # Final output from Python pivot table
-│   └── README_Python.md                          # Python setup & execution user guide
-│
-└── README.md                                     # Main overview file 
-└── LICENSE                                       # MIT License
-```
+This repository contains the deliverables for the SQL and Python technical assessment.
+Both implementations independently transform the raw dataset (`sql_test-raw`) into the final expected output (`sql_test-expected`),
+calculating the required business metrics and presenting them in a structured pivot-style format.
 
 ---
 
@@ -65,19 +41,9 @@ mrdiy-junior-data-engineer-assessment/
 
 ---
 
-## Python Transformation
-
-- Implemented in **Jupyter Notebook** (`python/mrdiy_python_transformation.ipynb`).
-- Uses **pandas** for data manipulation and pivoting.
-- Exports the final result as `sql_test-expected (Python).xlsx`.
-
-**NOTE:** Refer to [README_Python.md](python/README_Python.md) for detailed setup and execution steps.
-
----
-
 ## SQL Transformation
 
-- Implemented using **MySQL**.
+- Implemented using **MySQL** (`sql/Data Transformation (SQL).sql`).
 - Script includes:
   - Database & table creation  
   - Data insertion  
@@ -86,6 +52,41 @@ mrdiy-junior-data-engineer-assessment/
 - Final output exported as `sql_test-expected (SQL).csv`.
 
 **NOTE:** Refer to [README_SQL.md](sql/README_SQL.md) for detailed setup and execution steps.
+
+---
+
+## Python Transformation
+
+- Implemented in **Jupyter Notebook** (`python/Data Transformation (Python).ipynb`).
+- Uses **pandas** for data manipulation and pivoting.
+- Exports the final result as `sql_test-expected (Python).xlsx`.
+
+**NOTE:** Refer to [README_Python.md](python/README_Python.md) for detailed setup and execution steps.
+
+---
+
+## 📁 Repository Structure
+
+```
+mrdiy-junior-data-engineer-assessment/
+│
+├── 📁 data/
+│   └── Section_2_Instructions.md                 # Original Section 2 Instructions from word file provided
+|   └── excel_sample_data_de.xlsx                 # Original dataset provided
+│
+├── 📁 sql/
+│   ├── Data Transformation (SQL).sql             # SQL script with table creation & transformation
+│   ├── sql_test-expected (SQL).csv               # Final output from SQL query (exported)
+│   └── README_SQL.md                             # SQL setup & execution userguide
+│
+├── 📁 python/
+│   ├── Data Transformation (Python).ipynb        # Python Jupyter Notebook transformation
+│   ├── sql_test-expected (Python).xlsx           # Final output from Python pivot table
+│   └── README_Python.md                          # Python setup & execution user guide
+│
+└── README.md                                     # Main overview file 
+└── LICENSE                                       # MIT License
+```
 
 ---
 
@@ -110,40 +111,35 @@ Both SQL and Python implementations include this metric for completeness.
 
 ---
 
-## ⚠️ Output Format Note
+## 🧾 Output Format Note
 
-> The pivoted outputs from SQL and Python contain **the same values and column order as the expected Excel output**,  
-> but may differ slightly in **visual structure** due to platform limitations:
->
-> - **SQL Output:** Flattened column names such as `Jan_25_sales_qty_contribution_by_category`  
-> - **Python Output:** Multi-level pivot table (month on top of metrics), as shown in `sql_test-expected (Python).xlsx`  
->
-> Specifically, Due to differences between SQL and Excel pivot formatting:
-> 
-> The SQL output presents month-specific columns such as Jan_25_sales_qty_contribution_by_category, Feb_25_…, etc.
-> The Python output mirrors the Excel pivot layout with month headers (Jan-25, Feb-25, …) grouped over the four metrics.
-> 
-> Both formats maintain the **same calculations and metric accuracy** as the provided `sql_test-expected` reference.
-> Hence, all calculated values are identical and verified and only the table layout differs.
+Both SQL and Python outputs contain the same values and correct metric order,
+but differ slightly in table layout due to the formatting behavior of each platform.
+
+| Implementation | Output Format | Example |
+|--------|----------|-------------|
+| SQL | Flattened columns | Jan_25_sales_qty_contribution_by_category, Feb_25_... |
+| Python | Multi-level pivot (month grouped above metrics) | Jan-25 → [sales_qty, sales_amt, sales_cost, profit] |
+
+✅ All calculated values have been verified identical to the reference sql_test-expected.
+The only difference lies in table presentation, not in the underlying data or logic.
 
 ---
 
-## Submission Details
+## 📤 Submission Details
 
 - **Excel Section:** Completed directly in the provided Excel file  
 - **Technical Section (SQL & Python):** Hosted in this GitHub repository  
 - **Aptitude Section:** Completed in the provided Word document  
 
-For any clarification, please refer to this repository or contact me directly.
+For clarification or review, please refer to this repository or contact me directly.
 
 ---
 
-**Author:** Zack Chong Zhao Cheng
+## 👤 Author Information
 
-**Date Submitted:** 9th November 2025
-
-**Email:** chongzhaocheng06@gmail.com
-
-**Eduaction:** Bachelor of Science (Hons) Statistical Data Modelling — Sunway University
-
-**Contact:** *[`LinkedIn Profile`](http://linkedin.com/in/chong-z-38b102131)* 
+Name: Zack Chong Zhao Cheng
+Email: chongzhaocheng06@gmail.com
+Education: B.Sc. (Hons) Statistical Data Modelling — Sunway University
+Date Submitted: 9th November 2025
+LinkedIn: *[`LinkedIn Profile`](http://linkedin.com/in/chong-z-38b102131)* 
