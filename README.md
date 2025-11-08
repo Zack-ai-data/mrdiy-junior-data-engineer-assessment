@@ -1,5 +1,4 @@
 # MR D.I.Y. Junior Data Engineer Assessment
-# Junior Data Engineer Technical Assessment  
 **Candidate:** Chong Zhao Cheng (Zack)  
 **Company:** MR D.I.Y. Trading Sdn Bhd  
 **Section 2:** Technical Knowledge – Data Transformation using SQL & Python
