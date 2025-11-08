@@ -5,17 +5,34 @@
 
 ---
 
-## Overview
+## Overview & Objective
 This repository includes work for the **SQL** and **Python** technical tests, along with their respective scripts, documentation and outputs.
-Both scripts independently transform the raw dataset (`sql_test-raw`) into the expected output format (`sql_test-expected`),  
-calculating the required business metrics and presenting them in a structured table.
+Both scripts independently transform the raw dataset (`sql_test-raw`) into the expected output format (`sql_test-expected`), 
+calculating the required business metrics and presenting them in a structured pivot table.
 
 ---
 
-## Objective
+## 📁 Repository Structure
 
-Transform the raw dataset (`sql_test-raw` in **excel_sample_data_de.xlsx**) into the expected pivot table format (`sql_test-expected`),  
-by performing all metric calculations and transformations using **SQL** and **Python** independently.
+```
+mrdiy-junior-data-engineer-assessment/
+│
+├── 📁 data/
+│   └── excel_sample_data_de.xlsx                 # Original dataset provided
+│
+├── 📁 sql/
+│   ├── Data Transformation (SQL).sql             # SQL script with table creation & transformation
+│   ├── sql_test-expected (SQL).csv               # Final output from SQL query (exported)
+│   └── README_SQL.md                             # SQL setup & execution userguide
+│
+├── 📁 python/
+│   ├── Data Transformation (Python).ipynb        # Python Jupyter Notebook transformation
+│   ├── sql_test-expected (Python).xlsx           # Final output from Python pivot table
+│   └── README_Python.md                          # Python setup & execution user guide
+│
+└── README.md                                     # Main overview file 
+└── LICENSE                                       # MIT License
+```
 
 ---
 
