@@ -16,7 +16,7 @@ Metrics calculated:
 ### 🧱 Setup Instructions
 
 1. Open **MySQL Workbench** or any MySQL-compatible SQL client.  
-2. Copy and paste all code from **`Data Transformation (SQL).sql`**.  
+2. Copy and paste all code from **[Data Transformation (SQL).sql](sql/Data%20Transformation%20(SQL).sql)**.  
 3. Ensure MySQL server is running (preferably version **8.0+**).  
 4. Execute the script **sequentially** to create tables, load data, and perform transformations.
 
