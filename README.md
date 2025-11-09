@@ -145,8 +145,8 @@ For clarification or review, please refer to this repository or contact me direc
 
 ## 👤 Author Information
 
-Name: Zack Chong Zhao Cheng
-Email: chongzhaocheng06@gmail.com
-Education: B.Sc. (Hons) Statistical Data Modelling — Sunway University
-Date Submitted: 9th November 2025
-LinkedIn: *[`LinkedIn Profile`](http://linkedin.com/in/chong-z-38b102131)* 
+**Name:** Zack Chong Zhao Cheng  
+**Email:** chongzhaocheng06@gmail.com  
+**Education:** B.Sc. (Hons) Statistical Data Modelling — Sunway University  
+**Date Submitted:** 9th November 2025  
+**LinkedIn:** [LinkedIn Profile](http://linkedin.com/in/chong-z-38b102131)
