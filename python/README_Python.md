@@ -36,10 +36,10 @@ Metrics calculated:
 
 The final file sql_output-expected (Python).xlsx will be generated in the same folder.
 
-**Note on metrics**
+---
 
-In the Excel reference file, contribution metrics are displayed as percentages (e.g., 45%).
+## Note on Metric Display Format
 
-This script outputs them as decimal values (e.g., 0.45) for accurate numeric representation.
-
-Both formats are equivalent which only the display differs.
+In the reference Excel file (sql_test-expected), contribution metrics are displayed as percentages (e.g., 45%).
+In this Python output, the same values are represented in decimal form (e.g., 0.45) to preserve numeric precision during calculations.
+Both formats are equivalent — only the display format differs.
