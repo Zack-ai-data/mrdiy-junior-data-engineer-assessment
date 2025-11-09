@@ -16,9 +16,9 @@ Metrics calculated:
 ### 🧱 Setup Instructions
 
 1. Open **MySQL Workbench** or any MySQL-compatible SQL client.  
-2. Copy and paste all code from **`mrdiy_sql_transformation.sql`**.  
+2. Copy and paste all code from **`Data Transformation (SQL).sql`**.  
 3. Ensure MySQL server is running (preferably version **8.0+**).  
-4. Execute the script sequentially.
+4. Execute the script **sequentially** to create tables, load data, and perform transformations.
 
 ---
 
@@ -44,8 +44,10 @@ Metrics calculated:
 
 ### 💾 Output Description
 
-The final query output displays each product and category combination  
-with columns like:
+The final query output displays each **product–category** combination with month-wise contribution metrics.
+
+**Example column pattern:**
+
 Jan_25_sales_qty_contribution_by_category
 Jan_25_sales_amt_contribution_by_category
 Jan_25_sales_cost_contribution_by_category
@@ -53,16 +55,16 @@ Jan_25_profit_contribution_by_category
 ... up to Aug_25
 
 Each month is expanded horizontally, grouping the four metrics in order:
-**(Qty → Amt → Cost → Profit).**
+**(Sales Qty Contribution → Sales Amt Contribution → Sales Cost Contribution → Profit Contribution).**
 
 ---
 
 ### ⚙️ Notes
 
-- You may export the result table from MySQL Workbench using:  
+- You may export the result table from **MySQL Workbench** using:  
   `Query > Export Results > CSV File (.csv)`
-- If you encounter **Error Code 1175**, it is due to MySQL’s safe update mode.  
-  The script includes the necessary commands:
+- If you encounter **Error Code 1175**, it is caused by MySQL’s Safe Update Mode.  
+  The script includes the required commands to toggle it:
   ```sql
   SET SQL_SAFE_UPDATES = 0;
   ...
