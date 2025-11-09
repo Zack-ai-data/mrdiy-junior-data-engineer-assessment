@@ -105,7 +105,7 @@ Therefore, both SQL and Python implementations include this additional metric fo
 >
 > To ensure consistency with the expected Excel reference and maintain calculation integrity, an additional metric was implemented:
 > 
-> 5. Profit Contribution by Category
+> 5. Sales Cost Contribution by Category
 
 ✅ This ensures all transformation outputs (SQL and Python) fully match the provided reference file and maintain consistency across all methods.
 
@@ -122,7 +122,7 @@ but differ slightly in table layout due to the formatting behavior of each platf
 | Python | Multi-level pivot (month grouped above metrics) | Jan-25 → [sales_qty, sales_amt, sales_cost, profit] |
 
 ✅ All calculated values have been verified identical to the reference (`sql_test-expected`).
-Only the visual structure differs — the underlying logic and results remain consistent.
+Only the visual structure differs where the underlying logic and results remain consistent.
 
 > Percentage Display Clarification
 > In the provided Excel reference (`sql_test-expected`), contribution metrics are displayed as percentages (e.g., 45%).
